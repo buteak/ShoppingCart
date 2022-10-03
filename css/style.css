@@ -437,30 +437,38 @@ button.pay-button{
 }
 
 
+
  @media(max-width:376px){
     body{
         overflow-x: hidden;
     }
-   nav{
-    height: 20vh;
-   }
+    .container{
+        width: 100%;
+        max-width: 375px;
+        margin: 0;
+    }
+    nav{
+        position: static;
+    }
   .navbar{
     display: flex;
-    flex-direction: column;
-    align-items: space-between;
+    align-items: center;
     justify-content: space-between;
     gap: 20px; 
 }
+.cart .fa-solid{
+    color: var(--primary-color);
+}
 header{
     width: 100%;
-    height: calc(80vh - 20vh)
 }
+
 .hero{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
+    margin-top: 5000px;
 }
 .hero-title{
     display: flex;
@@ -468,7 +476,7 @@ header{
     justify-content: center;
     align-items: center;
     color: var(--primary-color);
-    font-size:14px;
+    font-size:10px;
 }
 .hero-title h1{
     text-align: center;
@@ -480,16 +488,18 @@ header{
     width: 100%;
 }
 .hero-image img{
-    width: 250px;
-    height: 250px;
+    width: 10px;
+    height: 10px;
     border-radius: 20px;
+    display: none;
 }
 .product{
     display: grid;
     grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
-    gap: 10px;
     margin: 0;
     padding: 0;
+    width: 100%;
+    max-width: 375px;
  }
  .cartt{
     width: 100vw;
@@ -504,7 +514,11 @@ header{
         overflow-x: hidden;
     }
    nav{
-    height: 20vh;
+    position: static;
+   }
+   .container{
+    max-width: 415px;
+    margin: 0;
    }
   .navbar{
     display: flex;
@@ -515,14 +529,13 @@ header{
 }
 header{
     width: 100%;
-    height: calc(80vh - 20vh)
 }
 .hero{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px
 }
 .hero-title{
     display: flex;
@@ -545,17 +558,34 @@ header{
     width: 250px;
     height: 250px;
     border-radius: 20px;
+    display: none;
 }
 .product{
     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
+    grid-template-columns:1fr;
     gap: 10px;
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    max-width: 400px;
  }
  .cartt{
     width: 80vw;
  }
+ }
+
+ @media(max-width:550px){
+    nav{
+        position: static;
+    }
+    .hero{
+        margin-top: 200px;
+        padding-top: 50px;
+    }
+    .hero-image img{
+        width: 250px;
+        height: 250px;
+        border-radius: 20px;
+        display: none;
+    }
  }
 
 
